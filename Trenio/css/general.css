@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/**************************
+ modalni okno
+ **************************/
+
+/* Styl pro modální okno */
+.modal {
+    display: none; /* Skrytí modálního okna při načtení stránky */
+    position: fixed; /* Pevné umístění modálního okna */
+    z-index: 1; /* Vysoká hodnota Z-index zajistí, že modální okno bude navrchu ostatních prvků */
+    left: 0;
+    top: 0;
+    width: 100%; /* Nastavení šířky modálního okna na 100% */
+    height: 100%; /* Nastavení výšky modálního okna na 100% */
+    background-color: rgba(0,0,0,0.5); /* Částečně průhledné pozadí modálního okna */
+}
+
+/* Styl pro obsah modálního okna */
+.modal-content {
+    background-color: #fefefe; /* Barva pozadí obsahu modálního okna */
+    margin: 15% auto; /* Zarovnání obsahu modálního okna na střed */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Šířka obsahu modálního okna */
+}
+
+/* Styl pro tlačítko pro zavření modálního okna */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/******************************
+optins-content
+ ****************************/
+
+
+
+.options-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.options-content a {
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.options-content a:hover {
+    background-color: #ddd;
+}
+
+.options-dropdown:hover .options-content {
+    display: block;
+}

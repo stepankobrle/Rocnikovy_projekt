@@ -1,0 +1,124 @@
+body#login{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.1)),url("../img/login_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+}
+
+.wrapper{
+    width: 430px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: brightness(0.2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.back-uvod a i{
+    right: 20px;
+    top: 50%;
+    font-size: 20px;
+    color: white;
+}
+
+.back-uvod a i:hover{
+    font-size: 25px;
+}
+.wrapper h2{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.wrapper .input-box input{
+    width: 95%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .4);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    padding-inline: 10px;
+    padding-block: 0;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-password{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+
+.remember-password label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-password a {
+    color: white;
+    margin-right: 3px;
+    text-decoration: none;
+}
+
+.remember-password a:hover{
+    text-decoration: underline white;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover{
+    border: 1px solid rgba(255,255,255, .4);
+    background: black;
+    color: white;
+}
+
+.wrapper .registr{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper .registr p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.wrapper .registr p a:hover{
+    text-decoration: underline;
+}

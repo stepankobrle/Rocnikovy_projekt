@@ -1,0 +1,144 @@
+/**************
+    Header
+***************/
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    background-color: deepskyblue;
+    height: 70px;
+}
+
+.max700 {
+    display: none;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+
+.logo img {
+    width: 80px;
+    margin-left: 20px;
+}
+
+
+/* Navigace */
+nav {
+    margin-right: 30px;
+}
+
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+
+/*****************
+ Media queries
+ ******************/
+
+@media (max-width: 800px){
+    .max700 {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        background-color: #80dfff;
+        width: 100%;
+    }
+
+
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 23px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 800px){
+    header nav {
+        display: block !important;
+    }
+}
+
+
+
+
+#postrannilysta {
+    background-color: #fff;
+    padding: 20px;
+    width: 214px;
+    position: fixed;
+    top: 70px;
+    right: auto;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    flex: 0 0 250px;
+}
+
+#postrannilysta h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#postrannilysta ul {
+    list-style: none;
+    padding: 0;
+}
+
+#postrannilysta li {
+    margin-bottom: 15px;
+}
+
+#postrannilysta a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+#postrannilysta a:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 700px) {
+    #postrannilysta {
+        display: none;
+    }
+}

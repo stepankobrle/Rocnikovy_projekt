@@ -1,0 +1,22 @@
+/* Skryj všechny tabulky obsahu */
+.tabcontent {
+    display: none;
+}
+
+/* Styly pro tlačítka karet */
+.tablink {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+/* Zobrazí vybraný obsah karty */
+.active {
+    display: block;
+}
